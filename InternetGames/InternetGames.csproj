@@ -10,7 +10,9 @@
   <ItemGroup>
     <None Remove="Resources\Checkers\Checkers_Field.png" />
     <None Remove="Resources\Checkers\Checkers_Pieces.png" />
+    <None Remove="Resources\chkr.chm" />
     <None Remove="Resources\Icons\Icon_Checkers.ico" />
+    <None Remove="Resources\Startup\StartupHeader.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,7 +22,13 @@
     <Resource Include="Resources\Checkers\Checkers_Pieces.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <EmbeddedResource Include="Resources\chkr.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Resource Include="Resources\Icons\Icon_Checkers.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Startup\StartupHeader.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
