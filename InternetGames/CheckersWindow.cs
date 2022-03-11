@@ -15,8 +15,20 @@ namespace InternetGames
         public CheckersWindow()
         {
             InitializeComponent();
+#if !DEBUG
+            TSMI_Debug.Visible = false;
+#endif
+
+            LB_OpponentColor.Parent = PB_CheckersField;
+            LB_OpponentColor.Text = "Red";
+            LB_YourColor.Parent = PB_CheckersField;
+            LB_YourColor.Text = "White";
+            pictureBox2.Parent = PB_CheckersField;
         }
 
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
