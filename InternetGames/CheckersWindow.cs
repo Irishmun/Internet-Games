@@ -30,5 +30,11 @@ namespace InternetGames
         {
 
         }
+
+        private void TSMIDebug_SetFEN_Click(object sender, EventArgs e)
+        {
+            PopUps.DebugInsertFEN DebugFEN = new PopUps.DebugInsertFEN();
+            DebugFEN.ShowDialog();
+        }
     }
 }

@@ -316,30 +316,31 @@ namespace InternetGames
             // TSMIDebug_SetFEN
             // 
             this.TSMIDebug_SetFEN.Name = "TSMIDebug_SetFEN";
-            this.TSMIDebug_SetFEN.Size = new System.Drawing.Size(130, 22);
+            this.TSMIDebug_SetFEN.Size = new System.Drawing.Size(180, 22);
             this.TSMIDebug_SetFEN.Text = "Set FEN";
+            this.TSMIDebug_SetFEN.Click += new System.EventHandler(this.TSMIDebug_SetFEN_Click);
             // 
             // TSMIDebug_SkipTurn
             // 
             this.TSMIDebug_SkipTurn.Name = "TSMIDebug_SkipTurn";
-            this.TSMIDebug_SkipTurn.Size = new System.Drawing.Size(130, 22);
+            this.TSMIDebug_SkipTurn.Size = new System.Drawing.Size(180, 22);
             this.TSMIDebug_SkipTurn.Text = "Skip Turn";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(127, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // forceWinToolStripMenuItem
             // 
             this.forceWinToolStripMenuItem.Name = "forceWinToolStripMenuItem";
-            this.forceWinToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.forceWinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.forceWinToolStripMenuItem.Text = "Force Win";
             // 
             // forceLoseToolStripMenuItem
             // 
             this.forceLoseToolStripMenuItem.Name = "forceLoseToolStripMenuItem";
-            this.forceLoseToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.forceLoseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.forceLoseToolStripMenuItem.Text = "Force Lose";
             // 
             // LB_OpponentColor
