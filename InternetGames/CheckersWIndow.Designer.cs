@@ -289,6 +289,7 @@ namespace InternetGames
             this.TSMI_ViewHelp.Name = "TSMI_ViewHelp";
             this.TSMI_ViewHelp.Size = new System.Drawing.Size(158, 22);
             this.TSMI_ViewHelp.Text = "View Help";
+            this.TSMI_ViewHelp.Click += new System.EventHandler(this.TSMI_ViewHelp_Click);
             // 
             // toolStripSeparator2
             // 
@@ -316,31 +317,31 @@ namespace InternetGames
             // TSMIDebug_SetFEN
             // 
             this.TSMIDebug_SetFEN.Name = "TSMIDebug_SetFEN";
-            this.TSMIDebug_SetFEN.Size = new System.Drawing.Size(180, 22);
+            this.TSMIDebug_SetFEN.Size = new System.Drawing.Size(130, 22);
             this.TSMIDebug_SetFEN.Text = "Set FEN";
             this.TSMIDebug_SetFEN.Click += new System.EventHandler(this.TSMIDebug_SetFEN_Click);
             // 
             // TSMIDebug_SkipTurn
             // 
             this.TSMIDebug_SkipTurn.Name = "TSMIDebug_SkipTurn";
-            this.TSMIDebug_SkipTurn.Size = new System.Drawing.Size(180, 22);
+            this.TSMIDebug_SkipTurn.Size = new System.Drawing.Size(130, 22);
             this.TSMIDebug_SkipTurn.Text = "Skip Turn";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(127, 6);
             // 
             // forceWinToolStripMenuItem
             // 
             this.forceWinToolStripMenuItem.Name = "forceWinToolStripMenuItem";
-            this.forceWinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.forceWinToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.forceWinToolStripMenuItem.Text = "Force Win";
             // 
             // forceLoseToolStripMenuItem
             // 
             this.forceLoseToolStripMenuItem.Name = "forceLoseToolStripMenuItem";
-            this.forceLoseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.forceLoseToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.forceLoseToolStripMenuItem.Text = "Force Lose";
             // 
             // LB_OpponentColor
@@ -370,6 +371,7 @@ namespace InternetGames
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 488);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.LB_YourColor);
             this.Controls.Add(this.LB_OpponentColor);
             this.Controls.Add(this.LV_ChatMessages);
@@ -379,7 +381,6 @@ namespace InternetGames
             this.Controls.Add(this.CB_ChatMessage);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.PB_CheckersField);
-            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;

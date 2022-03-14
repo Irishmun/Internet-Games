@@ -31,12 +31,13 @@ namespace InternetGames.PopUps
         {
             this.BT_ConfirmFEN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TB_NewFEN = new System.Windows.Forms.TextBox();
             this.BT_CancelFEN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BT_ConfirmFEN
             // 
+            this.BT_ConfirmFEN.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.BT_ConfirmFEN.Location = new System.Drawing.Point(12, 56);
             this.BT_ConfirmFEN.Name = "BT_ConfirmFEN";
             this.BT_ConfirmFEN.Size = new System.Drawing.Size(111, 23);
@@ -54,15 +55,16 @@ namespace InternetGames.PopUps
             this.label1.TabIndex = 1;
             this.label1.Text = "Insert FEN string";
             // 
-            // textBox1
+            // TB_NewFEN
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 23);
-            this.textBox1.TabIndex = 2;
+            this.TB_NewFEN.Location = new System.Drawing.Point(12, 27);
+            this.TB_NewFEN.Name = "TB_NewFEN";
+            this.TB_NewFEN.Size = new System.Drawing.Size(228, 23);
+            this.TB_NewFEN.TabIndex = 2;
             // 
             // BT_CancelFEN
             // 
+            this.BT_CancelFEN.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BT_CancelFEN.Location = new System.Drawing.Point(129, 56);
             this.BT_CancelFEN.Name = "BT_CancelFEN";
             this.BT_CancelFEN.Size = new System.Drawing.Size(111, 23);
@@ -77,7 +79,7 @@ namespace InternetGames.PopUps
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(252, 93);
             this.Controls.Add(this.BT_CancelFEN);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TB_NewFEN);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BT_ConfirmFEN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -92,7 +94,7 @@ namespace InternetGames.PopUps
 
         private System.Windows.Forms.Button BT_ConfirmFEN;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button BT_CancelFEN;
+        internal System.Windows.Forms.TextBox TB_NewFEN;
     }
 }
