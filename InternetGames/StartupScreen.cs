@@ -31,6 +31,15 @@ namespace InternetGames
         private void BT_StartupPlay_Click(object sender, EventArgs e)
         {
             LB_InternetPrompt.Text = String.Empty;
+#if DEBUG
+            if(BT_StartupPlay.Text == "Try Again")
+            {
+                this.Hide();
+                CheckersWindow wind = new CheckersWindow();
+                wind.ShowDialog();
+                this.Close();
+            }
+#endif
             if (Internet.Connected())
             {
                 LB_StartupPrivacy.Text = "Connecting to game servers...";

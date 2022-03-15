@@ -10,7 +10,6 @@ namespace InternetGames.Game
     {
         internal PieceType PType;
         internal bool Kinged { get; private set; }
-
         internal virtual void KingMe()
         {
             Kinged = true;

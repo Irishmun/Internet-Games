@@ -84,6 +84,7 @@ namespace InternetGames.PopUps
             this.Controls.Add(this.BT_ConfirmFEN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DebugInsertFEN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "DebugInsertFEN";
             this.ResumeLayout(false);
             this.PerformLayout();

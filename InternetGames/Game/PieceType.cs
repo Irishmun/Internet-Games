@@ -8,9 +8,9 @@ namespace InternetGames.Game
 {
     enum PieceType
     {
-        Piece_White,
-        Piece_Red,
-        King_White,
-        King_Red
+        Piece_White = 'P',
+        Piece_Red = 'p',
+        King_White = 'K',
+        King_Red = 'k'
     }
 }

@@ -8,9 +8,17 @@ namespace InternetGames.Game
 {
     internal class RedCheckerPiece: CheckerPiece
     {
-        public RedCheckerPiece()
+        public RedCheckerPiece(bool kinged)
         {
-            PType = PieceType.Piece_Red;
+            if(kinged)
+            {
+                KingMe();
+            }
+            else
+            {
+                PType = PieceType.Piece_Red;
+            }
+            
         }
 
         internal override void KingMe()
