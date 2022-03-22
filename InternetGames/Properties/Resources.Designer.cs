@@ -83,6 +83,16 @@ namespace InternetGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SelectedField {
+            get {
+                object obj = ResourceManager.GetObject("SelectedField", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap StartupHeader {
             get {
                 object obj = ResourceManager.GetObject("StartupHeader", resourceCulture);

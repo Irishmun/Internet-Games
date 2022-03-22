@@ -16,6 +16,7 @@ namespace InternetGames
     {
         CheckersGame Game = new CheckersGame();
         private int RealWidth = 303, RealHeight = 303, X = 117, Y = 27, PieceSpacing = 1;//checked beforehand, magic numbers are fun
+        private static Point thousand = new Point(1000, 1000);
         List<Control> boardPieces = new List<Control>();
         public CheckersWindow()
         {
@@ -24,10 +25,12 @@ namespace InternetGames
             TSMI_Debug.Visible = false;
 #endif
             LB_OpponentColor.Parent = PB_CheckersField;
-            LB_OpponentColor.Text = "Red";
             LB_YourColor.Parent = PB_CheckersField;
+            pictureBox2.Parent = PB_CheckersField;//checker piece
+            PB_HoveredField.Parent = PB_CheckersField;//Selected object
+            PB_HoveredField.Location = thousand;
+            LB_OpponentColor.Text = "Red";
             LB_YourColor.Text = "White";
-            pictureBox2.Parent = PB_CheckersField;
             GeneratePieces(Game.DecodeFEN(Game.GenerateFEN()));//TODO: change to FEN of online opponent
         }
 
@@ -90,7 +93,7 @@ namespace InternetGames
                                 piece.Image = Images.WHITE_KING_GRAPHIC;
                                 break;
                             case PieceType.King_Red:
-                                piece.Image = Images.RED_KING_GRAPHIC;                                
+                                piece.Image = Images.RED_KING_GRAPHIC;
                                 break;
                             default:
                                 break;

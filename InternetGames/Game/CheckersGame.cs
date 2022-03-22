@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InternetGames.Util;
 
 namespace InternetGames.Game
 {
@@ -126,6 +127,20 @@ namespace InternetGames.Game
                 return BaseFEN;
             }
             return null;
+        }
+
+        /// <summary>
+        /// flips the board layout of the local FEN
+        /// </summary>
+        /// <param name="FEN"></param>
+        /// <returns></returns>
+        public string invertFEN(string FEN)
+        {
+            string[] all = FEN.Split(' ');
+            string revFEN = all[0].Reversed();
+            all[0] = revFEN;
+            string res = string.Join(' ', all);
+            return res;
         }
     }
 }

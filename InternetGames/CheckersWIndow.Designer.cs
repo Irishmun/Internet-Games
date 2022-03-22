@@ -55,18 +55,21 @@ namespace InternetGames
             this.TSMI_About = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_Debug = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIDebug_SetFEN = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMIDebug_FlipFEN = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIDebug_SkipTurn = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.forceWinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.forceLoseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LB_OpponentColor = new System.Windows.Forms.Label();
             this.LB_YourColor = new System.Windows.Forms.Label();
+            this.PB_HoveredField = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_CheckersField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_HoveredField)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_CheckersField
@@ -307,6 +310,7 @@ namespace InternetGames
             // 
             this.TSMI_Debug.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMIDebug_SetFEN,
+            this.TSMIDebug_FlipFEN,
             this.TSMIDebug_SkipTurn,
             this.toolStripSeparator3,
             this.forceWinToolStripMenuItem,
@@ -318,31 +322,37 @@ namespace InternetGames
             // TSMIDebug_SetFEN
             // 
             this.TSMIDebug_SetFEN.Name = "TSMIDebug_SetFEN";
-            this.TSMIDebug_SetFEN.Size = new System.Drawing.Size(130, 22);
+            this.TSMIDebug_SetFEN.Size = new System.Drawing.Size(147, 22);
             this.TSMIDebug_SetFEN.Text = "Set FEN";
             this.TSMIDebug_SetFEN.Click += new System.EventHandler(this.TSMIDebug_SetFEN_Click);
+            // 
+            // TSMIDebug_FlipFEN
+            // 
+            this.TSMIDebug_FlipFEN.Name = "TSMIDebug_FlipFEN";
+            this.TSMIDebug_FlipFEN.Size = new System.Drawing.Size(147, 22);
+            this.TSMIDebug_FlipFEN.Text = "Change Color";
             // 
             // TSMIDebug_SkipTurn
             // 
             this.TSMIDebug_SkipTurn.Name = "TSMIDebug_SkipTurn";
-            this.TSMIDebug_SkipTurn.Size = new System.Drawing.Size(130, 22);
+            this.TSMIDebug_SkipTurn.Size = new System.Drawing.Size(147, 22);
             this.TSMIDebug_SkipTurn.Text = "Skip Turn";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(127, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(144, 6);
             // 
             // forceWinToolStripMenuItem
             // 
             this.forceWinToolStripMenuItem.Name = "forceWinToolStripMenuItem";
-            this.forceWinToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.forceWinToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.forceWinToolStripMenuItem.Text = "Force Win";
             // 
             // forceLoseToolStripMenuItem
             // 
             this.forceLoseToolStripMenuItem.Name = "forceLoseToolStripMenuItem";
-            this.forceLoseToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.forceLoseToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.forceLoseToolStripMenuItem.Text = "Force Lose";
             // 
             // LB_OpponentColor
@@ -367,11 +377,23 @@ namespace InternetGames
             this.LB_YourColor.Text = "Your";
             this.LB_YourColor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // PB_HoveredField
+            // 
+            this.PB_HoveredField.BackColor = System.Drawing.Color.Transparent;
+            this.PB_HoveredField.Image = global::InternetGames.Properties.Resources.SelectedField;
+            this.PB_HoveredField.Location = new System.Drawing.Point(192, 203);
+            this.PB_HoveredField.Margin = new System.Windows.Forms.Padding(0);
+            this.PB_HoveredField.Name = "PB_HoveredField";
+            this.PB_HoveredField.Size = new System.Drawing.Size(39, 39);
+            this.PB_HoveredField.TabIndex = 9;
+            this.PB_HoveredField.TabStop = false;
+            // 
             // CheckersWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 488);
+            this.Controls.Add(this.PB_HoveredField);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.LB_YourColor);
             this.Controls.Add(this.LB_OpponentColor);
@@ -403,6 +425,7 @@ namespace InternetGames
             this.panel3.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_HoveredField)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,6 +464,8 @@ namespace InternetGames
         private System.Windows.Forms.ToolStripMenuItem forceLoseToolStripMenuItem;
         private System.Windows.Forms.Label LB_OpponentColor;
         private System.Windows.Forms.Label LB_YourColor;
+        private System.Windows.Forms.ToolStripMenuItem TSMIDebug_FlipFEN;
+        private System.Windows.Forms.PictureBox PB_HoveredField;
     }
 }
 
