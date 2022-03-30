@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InternetGames.Game
 {
-    abstract class CheckerPiece
+    public abstract class CheckerPiece
     {
         internal PieceType PType;
         internal bool Kinged { get; private set; }

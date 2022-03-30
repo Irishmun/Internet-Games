@@ -81,17 +81,18 @@ namespace InternetGames
             this.PB_CheckersField.Size = new System.Drawing.Size(540, 360);
             this.PB_CheckersField.TabIndex = 0;
             this.PB_CheckersField.TabStop = false;
+            this.PB_CheckersField.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PB_CheckersField_MouseMove);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::InternetGames.Properties.Resources.Checkers_Pieces;
-            this.pictureBox2.Location = new System.Drawing.Point(269, 104);
+            this.pictureBox2.Location = new System.Drawing.Point(269, 141);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 37);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // CB_ChatMessage
             // 
@@ -381,12 +382,13 @@ namespace InternetGames
             // 
             this.PB_HoveredField.BackColor = System.Drawing.Color.Transparent;
             this.PB_HoveredField.Image = global::InternetGames.Properties.Resources.SelectedField;
-            this.PB_HoveredField.Location = new System.Drawing.Point(192, 203);
+            this.PB_HoveredField.Location = new System.Drawing.Point(192, 179);
             this.PB_HoveredField.Margin = new System.Windows.Forms.Padding(0);
             this.PB_HoveredField.Name = "PB_HoveredField";
             this.PB_HoveredField.Size = new System.Drawing.Size(39, 39);
             this.PB_HoveredField.TabIndex = 9;
             this.PB_HoveredField.TabStop = false;
+            this.PB_HoveredField.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PB_HoveredField_MouseClick);
             // 
             // CheckersWindow
             // 

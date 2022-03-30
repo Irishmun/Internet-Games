@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InternetGames.Game
 {
-    internal class WhiteCheckerPiece : CheckerPiece
+    public class WhiteCheckerPiece : CheckerPiece
     {
         public WhiteCheckerPiece(bool kinged)
         {
